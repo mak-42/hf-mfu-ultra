@@ -9,6 +9,9 @@ The script provides two operations with [Ultra](https://github.com/RfidResearchG
 1. Restore (write) dump to tag.
 2. Wipe tag.
 
+## Setup
+You should download the script `hf_mfu_ultra.lua` and copy it to the `<pm3 installation path>/client/luascripts` folder.
+
 ## Restore dump to tag
 The operation enables writing a previously saved dump to tag.
 
@@ -25,8 +28,8 @@ script run hf_mfu_ultra -key ffffffff -r hf-mfu-3476FF1514D866-dump.bin
 ## Wipe tag
 The operation enables clearing previously written Ultra tag (excluding the UUID). Use it to prepare tag for restoring another dump.
 
-[!WARNING]
-Do not use this operation with UL-5 tags.
+> [!WARNING]
+> Do not use this operation with UL-5 tags.
 
 Usage:
 ```
@@ -42,6 +45,9 @@ script run hf_mfu_ultra -k 1d237f76 -w
 Скрипт реалиует 2 операции с метками [Ultra](https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/magic_cards_notes.md#ultra-ru)/[UL-5](https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/magic_cards_notes.md#ul-5):
 1. Восстановление (запись) метки из дампа.
 2. Стирание данных метки.
+
+## Установка
+Необходимо скачать скрипт `hf_mfu_ultra.lua` и скопировать его в каталог `<каталог, куда установлен pm3>/client/luascripts`.
 
 ## Восстановление метки из дампа
 Операция позволяет записать на метку дамп, сохранённый в файл ранее.
@@ -59,8 +65,8 @@ script run hf_mfu_ultra -k ffffffff -r hf-mfu-3476FF1514D866-dump.bin
 ## Очистка метки
 Операция позволяет стереть с метки Ultra все ранее записанные данные (кроме UUID). Используйте операцию для подготовки метки к восстановления метки из другого дампа.
 
-[!WARNING]
-Не выполняете эту операцию с метками UL-5.
+> [!WARNING]
+> Не выполняете эту операцию с метками UL-5.
 
 Использование:
 ```
